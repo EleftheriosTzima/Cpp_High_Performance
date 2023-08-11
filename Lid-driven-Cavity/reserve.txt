@@ -1,0 +1,50 @@
+vort_sub_new[i]=vort_sub_old[i]+dt/Re*((vort_sub_old[i+1]-2*vort_sub_old[i]+vort_sub_old[i-1])/(dx*dx)-(vort_sub_old[i+xdim]-2*vort_sub_old[i]+vort_sub_old[i-xdim])/(dy*dy))
+  +dt/(4*dx*dy)*(stream_sub[i+1]-stream_sub[i-1])*(vort_sub_old[i+xdim]-vort_sub_old[i-xdim])
+  -dt/(4*dx*dy)*(stream_sub[i+xdim]-stream_sub[i-xdim])*(vort_sub_old[i+1]-vort_sub_old[i-1]);
+}
+
+middle
+
+vort_sub_new[i]=vort_sub_old[i]+dt/Re*((vort_sub_old[i+1]-2*vort_sub_old[i]+left_vort_rec[left])/(dx*dx)-(vort_sub_old[i+xdim]-2*vort_sub_old[i]+bottom_vort_rec[bottom])/(dy*dy))
+  +dt/(4*dx*dy)*(stream_sub[i+1]-left_vort_rec[left])*(vort_sub_old[i+xdim]-bottom_vort_rec[bottom])
+  -dt/(4*dx*dy)*(stream_sub[i+xdim]-bottom_stream[bottom])*(vort_sub_old[i+1]-left_vort_rec[left]);
+
+bottom left
+
+vort_sub_new[i]=vort_sub_old[i]+dt/Re*((right_vort_rec[right])-2*vort_sub_old[i]+vort_sub_old[i-1])/(dx*dx)-(vort_sub_old[i+xdim]-2*vort_sub_old[i]+bottom_vort_rec[bottom])/(dy*dy))
+  +dt/(4*dx*dy)*(right_stream[right]-stream_sub[i-1])*(vort_sub_old[i+xdim]-bottom_vort_rec[bottom])
+  -dt/(4*dx*dy)*(stream_sub[i+xdim]-bottom_stream[bottom])*(right_vort_rec[right]-vort_sub_old[i-1]);
+
+  bottom right
+
+  vort_sub_new[i]=vort_sub_old[i]+dt/Re*((right_vort_rec[right]-2*vort_sub_old[i]+vort_sub_old[i-1])/(dx*dx)-(top_vort_rec[top]-2*vort_sub_old[i]+vort_sub_old[i-xdim])/(dy*dy))
+    +dt/(4*dx*dy)*(right_stream[right]-stream_sub[i-1])*(top_vort_rec[top]-vort_sub_old[i-xdim])
+    -dt/(4*dx*dy)*(top_stream[top]-stream_sub[i-xdim])*(right_vort_rec[right]-vort_sub_old[i-1]);
+
+    top right
+
+    vort_sub_new[i]=vort_sub_old[i]+dt/Re*((vort_sub_old[i+1]-2*vort_sub_old[i]+left_vort_rec[left])/(dx*dx)-(top_vort_rec[top]-2*vort_sub_old[i]+vort_sub_old[i-xdim])/(dy*dy))
+      +dt/(4*dx*dy)*(stream_sub[i+1]-left_stream[left])*(top_vort_rec[top]-vort_sub_old[i-xdim])
+      -dt/(4*dx*dy)*(top_stream[top]-stream_sub[i-xdim])*(vort_sub_old[i+1]-left_vort_rec[left]);
+    top++; left++;
+
+    top left
+
+    vort_sub_new[i]=vort_sub_old[i]+dt/Re*((vort_sub_old[i+1]-2*vort_sub_old[i]+vort_sub_old[i-1])/(dx*dx)-(top_vort_rec[top]-2*vort_sub_old[i]+vort_sub_old[i-xdim])/(dy*dy))
+      +dt/(4*dx*dy)*(stream_sub[i+1]-stream_sub[i-1])*(top_vort_rec[top]-vort_sub_old[i-xdim])
+      -dt/(4*dx*dy)*(top_stream[top]-stream_sub[i-xdim])*(vort_sub_old[i+1]-vort_sub_old[i-1]);
+    top++;
+
+    top
+
+    vort_sub_new[i]=vort_sub_old[i]+dt/Re*((vort_sub_old[i+1]-2*vort_sub_old[i]+left_vort_rec[left])/(dx*dx)-(vort_sub_old[i+xdim]-2*vort_sub_old[i]+vort_sub_old[i-xdim])/(dy*dy))
+      +dt/(4*dx*dy)*(stream_sub[i+1]-left_stream[left])*(vort_sub_old[i+xdim]-vort_sub_old[i-xdim])
+      -dt/(4*dx*dy)*(stream_sub[i+xdim]-stream_sub[i-xdim])*(vort_sub_old[i+1]-left_vort_rec[left]);
+
+      left
+
+      vort_sub_new[i]=vort_sub_old[i]+dt/Re*((right_vort_rec[right]-2*vort_sub_old[i]+vort_sub_old[i-1])/(dx*dx)-(vort_sub_old[i+xdim]-2*vort_sub_old[i]+vort_sub_old[i-xdim])/(dy*dy))
+        +dt/(4*dx*dy)*(right_stream[right]-stream_sub[i-1])*(vort_sub_old[i+xdim]-vort_sub_old[i-xdim])
+        -dt/(4*dx*dy)*(stream_sub[i+xdim]-stream_sub[i-xdim])*(right_vort_rec[right]-vort_sub_old[i-1]);
+
+        right

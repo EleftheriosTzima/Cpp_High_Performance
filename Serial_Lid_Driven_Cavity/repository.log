@@ -1,0 +1,145 @@
+commit ef78eb4a254bd32099dcb0bb482c86e21de35c4c
+Author: Terry <eleftheriostzima@gmail.com>
+Date:   Tue Mar 24 02:16:53 2020 +0000
+
+    Running for larger times
+
+M	Stream_100_Ly_2.txt
+
+commit 3cceebaaf31dc843c915b24e8e300981573c183d
+Author: Terry <eleftheriostzima@gmail.com>
+Date:   Mon Mar 23 23:21:17 2020 +0000
+
+    Last Question Answers
+
+M	Cavity
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+A	Stream_100_Lx_2.txt
+A	Stream_100_Ly_2.txt
+M	Stream_3200.txt
+
+commit 47aaa4d8d57f6016fbaf8bee7a252bc3623498b8
+Author: Terry <eleftheriostzima@gmail.com>
+Date:   Mon Mar 9 05:49:07 2020 +0000
+
+    adding additional cpp file for poisson
+
+M	Cavity
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.o
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+M	Makefile
+A	Poisson_Solver.cpp
+A	Poisson_Solver.o
+
+commit 9eac10eda417def0d49d031d0308144001e86b9b
+Author: Terry <eleftheriostzima@gmail.com>
+Date:   Mon Mar 9 05:27:34 2020 +0000
+
+    creating poisson class
+
+M	Cavity
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.h
+M	LidDrivenCavity.o
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+
+commit 4629cf15b82cfb3e2b4676580559740adc42dfe0
+Author: Terry <eleftheriostzima@gmail.com>
+Date:   Mon Mar 9 04:33:34 2020 +0000
+
+    Changes according to coursework
+
+M	Cavity
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.h
+M	LidDrivenCavity.o
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+M	Stream_3200.txt
+
+commit 481802fbaa65a04e7c1e3cea3befc8284dc1990a
+Author: Terry <eleftheriostzima@gmail.com>
+Date:   Mon Mar 9 01:39:23 2020 +0000
+
+    Stream Functions
+
+M	Cavity
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.o
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+A	Stream_100.txt
+A	Stream_1000.txt
+A	Stream_3200.txt
+A	Stream_400.txt
+
+commit 3b6edd738454bb4018f339662e04f48fce7e3bd0
+Author: Terry <eleftheriostzima@gmail.com>
+Date:   Sun Mar 8 22:31:39 2020 +0000
+
+    Acquiring results
+
+M	Cavity
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.h
+M	LidDrivenCavity.o
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+M	Re_100.txt
+A	Re_1000.txt
+A	Re_400.txt
+
+commit e87ca7afe9b0b4bbc2f651266698d8fc225f7de5
+Author: Eleftherios <lefteristzima@gmail.com>
+Date:   Sun Mar 8 18:58:05 2020 +0000
+
+    Improving the performance
+
+A	Cavity
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.h
+M	LidDrivenCavity.o
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+M	Makefile
+A	Re_100.txt
+
+commit 748e2326a8f5af7c9107feb42865a8ecb4c00d8e
+Author: Eleftherios <lefteristzima@gmail.com>
+Date:   Sun Mar 8 00:01:11 2020 +0000
+
+    Serial code Works
+
+D	Cavity
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.h
+M	LidDrivenCavity.o
+M	LidDrivenCavitySolver.cpp
+M	LidDrivenCavitySolver.o
+M	Makefile
+
+commit 17fdd83e39deec420db9c932f30a573c1bccfac5
+Author: Eleftherios <lefteristzima@gmail.com>
+Date:   Sat Mar 7 02:38:45 2020 +0000
+
+    changes are made
+
+A	Cavity
+A	LidDrivenCavity.cpp
+A	LidDrivenCavity.h
+A	LidDrivenCavity.o
+A	LidDrivenCavitySolver.cpp
+A	LidDrivenCavitySolver.o
+A	Makefile
+
+commit e54bf16aa44ef0ef02f626b328828339a451aa11
+Author: Eleftherios Tzima <60991203+EleftheriosTzima@users.noreply.github.com>
+Date:   Thu Mar 5 18:49:23 2020 +0000
+
+    Initial commit
+
+A	README.md
